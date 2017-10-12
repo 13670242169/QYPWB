@@ -15,6 +15,7 @@
 		915F9F891F8F9490004981A1 /* CoreAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F9F881F8F9490004981A1 /* CoreAnimationTests.swift */; };
 		915F9F941F8F9490004981A1 /* CoreAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F9F931F8F9490004981A1 /* CoreAnimationUITests.swift */; };
 		915F9FE01F8F964B004981A1 /* ColorV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F9FDF1F8F964B004981A1 /* ColorV.swift */; };
+		915F9FE31F8F9B21004981A1 /* ImageV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F9FE21F8F9B21004981A1 /* ImageV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		915F9F931F8F9490004981A1 /* CoreAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAnimationUITests.swift; sourceTree = "<group>"; };
 		915F9F951F8F9490004981A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		915F9FDF1F8F964B004981A1 /* ColorV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorV.swift; sourceTree = "<group>"; };
+		915F9FE11F8F9AF0004981A1 /* 81ABDFEB9200B96EF1E682DA9574E31C.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 81ABDFEB9200B96EF1E682DA9574E31C.jpg; sourceTree = "<group>"; };
+		915F9FE21F8F9B21004981A1 /* ImageV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +102,10 @@
 		915F9F721F8F9490004981A1 /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				915F9FE11F8F9AF0004981A1 /* 81ABDFEB9200B96EF1E682DA9574E31C.jpg */,
 				915F9F731F8F9490004981A1 /* AppDelegate.swift */,
 				915F9F751F8F9490004981A1 /* ViewController.swift */,
+				915F9FE21F8F9B21004981A1 /* ImageV.swift */,
 				915F9FDF1F8F964B004981A1 /* ColorV.swift */,
 				915F9F771F8F9490004981A1 /* Main.storyboard */,
 				915F9F7A1F8F9490004981A1 /* Assets.xcassets */,
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				915F9FE31F8F9B21004981A1 /* ImageV.swift in Sources */,
 				915F9F761F8F9490004981A1 /* ViewController.swift in Sources */,
 				915F9FE01F8F964B004981A1 /* ColorV.swift in Sources */,
 				915F9F741F8F9490004981A1 /* AppDelegate.swift in Sources */,

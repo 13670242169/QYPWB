@@ -23,14 +23,18 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        test1()
+        test2()
     }
     
     func test1(){
         let colorV = ColorV(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         colorV.center = self.view.center
         self.view.addSubview(colorV)
-     
+    }
+    func test2(){
+       let imag = ImageV(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+       imag.center = self.view.center
+       self.view.addSubview(imag)
     }
 
 
