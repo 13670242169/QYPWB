@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        test2()
+        test5_1()
     }
     /// 蚂蚁信用分
     func test1(){
@@ -38,6 +38,11 @@ class ViewController: UIViewController {
     }
     func test5(){
         let testView = TestView5(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
+        testView.center = self.view.center
+        self.view.addSubview(testView)
+    }
+    func test5_1(){
+        let testView = TestView6(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
         testView.center = self.view.center
         self.view.addSubview(testView)
     }

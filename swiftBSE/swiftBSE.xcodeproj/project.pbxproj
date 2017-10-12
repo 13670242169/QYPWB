@@ -23,6 +23,7 @@
 		185C55B61F8F5FF500B6A912 /* MyBseView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C55B51F8F5FF500B6A912 /* MyBseView2.swift */; };
 		185C55B81F8F625E00B6A912 /* MyBseView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C55B71F8F625E00B6A912 /* MyBseView3.swift */; };
 		185C55BA1F8F643700B6A912 /* MyBseView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C55B91F8F643700B6A912 /* MyBseView4.swift */; };
+		915F9F661F8F9049004981A1 /* TestView6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F9F651F8F9049004981A1 /* TestView6.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		185C55B51F8F5FF500B6A912 /* MyBseView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBseView2.swift; sourceTree = "<group>"; };
 		185C55B71F8F625E00B6A912 /* MyBseView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBseView3.swift; sourceTree = "<group>"; };
 		185C55B91F8F643700B6A912 /* MyBseView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBseView4.swift; sourceTree = "<group>"; };
+		915F9F651F8F9049004981A1 /* TestView6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView6.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				185C55AD1F8F54BD00B6A912 /* TestView3.swift */,
 				185C55AF1F8F555D00B6A912 /* TestView4.swift */,
 				185C55B11F8F56BC00B6A912 /* TestView5.swift */,
+				915F9F651F8F9049004981A1 /* TestView6.swift */,
 				185C55B31F8F5C8200B6A912 /* MyBseView1.swift */,
 				185C55B51F8F5FF500B6A912 /* MyBseView2.swift */,
 				185C55B71F8F625E00B6A912 /* MyBseView3.swift */,
@@ -289,6 +292,7 @@
 				185C55AA1F8F214700B6A912 /* TestView.swift in Sources */,
 				185C55B81F8F625E00B6A912 /* MyBseView3.swift in Sources */,
 				185C55B21F8F56BC00B6A912 /* TestView5.swift in Sources */,
+				915F9F661F8F9049004981A1 /* TestView6.swift in Sources */,
 				185C55B61F8F5FF500B6A912 /* MyBseView2.swift in Sources */,
 				185C55B01F8F555D00B6A912 /* TestView4.swift in Sources */,
 				185C557E1F8F211C00B6A912 /* ViewController.swift in Sources */,
