@@ -97,6 +97,8 @@
 		185C55331F8F020F00B6A912 /* QYPWB */ = {
 			isa = PBXGroup;
 			children = (
+				185C55621F8F02D700B6A912 /* Classes */,
+				185C55661F8F031F00B6A912 /* Tools */,
 				185C55341F8F020F00B6A912 /* AppDelegate.swift */,
 				185C55361F8F020F00B6A912 /* ViewController.swift */,
 				185C55381F8F020F00B6A912 /* Main.storyboard */,
@@ -123,6 +125,108 @@
 				185C55561F8F021000B6A912 /* Info.plist */,
 			);
 			path = QYPWBUITests;
+			sourceTree = "<group>";
+		};
+		185C55621F8F02D700B6A912 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				185C55641F8F02D700B6A912 /* View(视图和控制器) */,
+				185C55631F8F02D700B6A912 /* Model(模型) */,
+				185C55651F8F02D700B6A912 /* ViewModel(视图模型) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		185C55631F8F02D700B6A912 /* Model(模型) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model(模型)";
+			sourceTree = "<group>";
+		};
+		185C55641F8F02D700B6A912 /* View(视图和控制器) */ = {
+			isa = PBXGroup;
+			children = (
+				185C556C1F8F03B700B6A912 /* Main */,
+				185C556A1F8F03B700B6A912 /* Home */,
+				185C556E1F8F03B700B6A912 /* Discover */,
+				185C556B1F8F03B700B6A912 /* Message */,
+				185C556D1F8F03B700B6A912 /* Profile */,
+			);
+			path = "View(视图和控制器)";
+			sourceTree = "<group>";
+		};
+		185C55651F8F02D700B6A912 /* ViewModel(视图模型) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "ViewModel(视图模型)";
+			sourceTree = "<group>";
+		};
+		185C55661F8F031F00B6A912 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				185C55671F8F031F00B6A912 /* Extension */,
+				185C55681F8F031F00B6A912 /* Model */,
+				185C55691F8F031F00B6A912 /* NetWork */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		185C55671F8F031F00B6A912 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		185C55681F8F031F00B6A912 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185C55691F8F031F00B6A912 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		185C556A1F8F03B700B6A912 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		185C556B1F8F03B700B6A912 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		185C556C1F8F03B700B6A912 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		185C556D1F8F03B700B6A912 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		185C556E1F8F03B700B6A912 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +291,7 @@
 		185C55291F8F020F00B6A912 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = QYP;
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Apple;
@@ -426,7 +531,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9A5TMJ2KM;
 				INFOPLIST_FILE = QYPWB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Apple.com.QYPWB;
@@ -440,7 +547,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9A5TMJ2KM;
 				INFOPLIST_FILE = QYPWB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Apple.com.QYPWB;
