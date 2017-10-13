@@ -34,25 +34,26 @@ class ImageV: UIImageView {
         //方法一
         UIView.animate(withDuration: 0.5) {
             
-//            self.layer.transform = CATransform3DMakeRotation(.pi, 1, 1, 0)
-//            //把结构体缓存对象
-//            _ = NSValue(caTransform3D: CATransform3DMakeRotation(.pi, 1, 1, 0))
-//
-            
+            self.layer.transform = CATransform3DMakeRotation(.pi, 1, 1, 0)
+            //把结构体缓存对象
+            _ = NSValue(caTransform3D: CATransform3DMakeRotation(.pi, 1, 1, 0))
+
+            //方法二
+//            self.layer.setValue(M_PI, forKey: "transform.rotation.x")
         }
-        //方法二
-        // 我们一般通过KVC做快速旋转。平移，缩放
-        let anim = CABasicAnimation(keyPath: "transform.rotation.x")
-        anim.toValue = 1 * M_PI
-        anim.duration = 1
-        anim.repeatCount = MAXFLOAT
-        anim.isRemovedOnCompletion = true
-        self.layer.add(anim, forKey: nil)
-        self.layer.removeAllAnimations()
-        UIView.animate(withDuration: 0.2) {
-            self.transform = self.transform.rotated(by: CGFloat(M_PI))
-        }
-        
+
+//        // 我们一般通过KVC做快速旋转。平移，缩放
+//        let anim = CABasicAnimation(keyPath: "transform.rotation.x")
+//        anim.toValue = 1 * M_PI
+//        anim.duration = 1
+//        anim.repeatCount = MAXFLOAT
+//        anim.isRemovedOnCompletion = true
+//        self.layer.add(anim, forKey: nil)
+//        self.layer.removeAllAnimations()
+//        UIView.animate(withDuration: 0.2) {
+//            self.transform = self.transform.rotated(by: CGFloat(M_PI))
+//        }
+
         
     }
     

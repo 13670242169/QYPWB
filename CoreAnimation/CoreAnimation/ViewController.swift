@@ -17,19 +17,46 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
 
-        /*-----------test8()
+
+        /*
+        //获取当前时间
+        let startTime = NSDate()
+
+//       //当前时间的时间戳
+        let timeInterval:TimeInterval = startTime.timeIntervalSince1970
+        let timeStamp = Int(timeInterval)
+        print("当前时间的时间戳：\(timeStamp)")
+
+        guard let image = UIImage(named: "122") else {
+            return
+        }
+        let queue = DispatchQueue(label: "qqq", qos: DispatchQoS.userInitiated, attributes: DispatchQueue.Attributes.concurrent)
+        queue.async {
+            let current = Thread.current
+            print(current)
+            _ = UIImageJPEGRepresentation(image, 0.5)
+        }
+        let endTime = NSDate()
+        //当前时间
+        let timeInterval1:TimeInterval = endTime.timeIntervalSince1970
+        let timeStamp1 = Int(timeInterval1)
+        print("当前时间的时间戳：\(timeStamp1)")
+        */
+
+        /*
+        -----------test8()
         let LayerTransition = QypCATransition(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
         LayerTransition.center = self.view.center
         self.view.addSubview(LayerTransition)
         self.LayerTransition = LayerTransition
-         */
+        */
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        test8()
-        test9()
+//        test2()
     }
     func test1(){
         let colorV = ColorV(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
