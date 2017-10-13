@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		18C313CC1F904D0B0091C079 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C313CB1F904D0B0091C079 /* ClockView.swift */; };
+		18C313CE1F906A6B0091C079 /* QypCABasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C313CD1F906A6B0091C079 /* QypCABasicAnimation.swift */; };
+		18C313D01F906D6E0091C079 /* QypCAKeyframeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C313CF1F906D6E0091C079 /* QypCAKeyframeAnimation.swift */; };
+		18C313D21F906F590091C079 /* QypCAKeyframeAnimation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C313D11F906F590091C079 /* QypCAKeyframeAnimation2.swift */; };
+		18C313D41F9072A00091C079 /* QypCATransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C313D31F9072A00091C079 /* QypCATransition.swift */; };
+		18C313D61F90768C0091C079 /* QYpCAAnimationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C313D51F90768C0091C079 /* QYpCAAnimationGroup.swift */; };
 		915F9F741F8F9490004981A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F9F731F8F9490004981A1 /* AppDelegate.swift */; };
 		915F9F761F8F9490004981A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F9F751F8F9490004981A1 /* ViewController.swift */; };
 		915F9F791F8F9490004981A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915F9F771F8F9490004981A1 /* Main.storyboard */; };
@@ -39,6 +44,11 @@
 
 /* Begin PBXFileReference section */
 		18C313CB1F904D0B0091C079 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		18C313CD1F906A6B0091C079 /* QypCABasicAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QypCABasicAnimation.swift; sourceTree = "<group>"; };
+		18C313CF1F906D6E0091C079 /* QypCAKeyframeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QypCAKeyframeAnimation.swift; sourceTree = "<group>"; };
+		18C313D11F906F590091C079 /* QypCAKeyframeAnimation2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QypCAKeyframeAnimation2.swift; sourceTree = "<group>"; };
+		18C313D31F9072A00091C079 /* QypCATransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QypCATransition.swift; sourceTree = "<group>"; };
+		18C313D51F90768C0091C079 /* QYpCAAnimationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYpCAAnimationGroup.swift; sourceTree = "<group>"; };
 		915F9F701F8F9490004981A1 /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915F9F731F8F9490004981A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		915F9F751F8F9490004981A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +123,11 @@
 				915F9FE41F8FA84B004981A1 /* LayerImage.swift */,
 				915F9FDF1F8F964B004981A1 /* ColorV.swift */,
 				18C313CB1F904D0B0091C079 /* ClockView.swift */,
+				18C313CD1F906A6B0091C079 /* QypCABasicAnimation.swift */,
+				18C313CF1F906D6E0091C079 /* QypCAKeyframeAnimation.swift */,
+				18C313D11F906F590091C079 /* QypCAKeyframeAnimation2.swift */,
+				18C313D31F9072A00091C079 /* QypCATransition.swift */,
+				18C313D51F90768C0091C079 /* QYpCAAnimationGroup.swift */,
 				915F9F771F8F9490004981A1 /* Main.storyboard */,
 				915F9F7A1F8F9490004981A1 /* Assets.xcassets */,
 				915F9F7C1F8F9490004981A1 /* LaunchScreen.storyboard */,
@@ -274,11 +289,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				915F9FE31F8F9B21004981A1 /* ImageV.swift in Sources */,
+				18C313D01F906D6E0091C079 /* QypCAKeyframeAnimation.swift in Sources */,
 				18C313CC1F904D0B0091C079 /* ClockView.swift in Sources */,
+				18C313D61F90768C0091C079 /* QYpCAAnimationGroup.swift in Sources */,
+				18C313D41F9072A00091C079 /* QypCATransition.swift in Sources */,
 				915F9F761F8F9490004981A1 /* ViewController.swift in Sources */,
+				18C313D21F906F590091C079 /* QypCAKeyframeAnimation2.swift in Sources */,
 				915F9FE51F8FA84B004981A1 /* LayerImage.swift in Sources */,
 				915F9FE01F8F964B004981A1 /* ColorV.swift in Sources */,
 				915F9F741F8F9490004981A1 /* AppDelegate.swift in Sources */,
+				18C313CE1F906A6B0091C079 /* QypCABasicAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
