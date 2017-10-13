@@ -79,7 +79,7 @@ class ClockView: UIImageView {
         let minuteLayer = CALayer()
         minuteLayer.bounds = CGRect(x: 0, y: 0, width: 2, height: 70)
         minuteLayer.backgroundColor = UIColor.black.cgColor
-        minuteLayer.anchorPoint = CGPoint(x: 0.5, y: 1)
+        minuteLayer.anchorPoint = CGPoint(x: 1, y: 1)
         minuteLayer.position = CGPoint(x: self.bounds.size.width * 0.5, y: self.bounds.size.height * 0.5)
         self.layer.addSublayer(minuteLayer)
         self.minuteLayer = minuteLayer
@@ -89,14 +89,20 @@ class ClockView: UIImageView {
         hourLayer.bounds = CGRect(x: 0, y: 0, width: 3, height: 50)
         hourLayer.backgroundColor = UIColor.black.cgColor
         hourLayer.cornerRadius = 1.5
-        hourLayer.anchorPoint = CGPoint(x: 0.5, y: 1)
+        hourLayer.anchorPoint = CGPoint(x: 1.5, y: 1)
         hourLayer.position = CGPoint(x: self.bounds.size.width * 0.5, y: self.bounds.size.height * 0.5)
         self.layer.addSublayer(hourLayer)
         self.hourLayer = hourLayer
     }
+    /*
+     说白了，position 是什么？其实就是图层（layer）在父图层（superLayer）中的位置，图层的 size 定下了，那么应该把它放在父图层的什么位置，不就是由 position 定的吗？此时，父图层就会告诉这个儿子：喂，小子，这个 position 就是你在我地盘上的位置，你啊，如果将来要做 transition 变换，默认是以这个点为基准的。
 
+     儿子：哦，那我到时候做旋转那肯定也绕着这个点转了。deimo（但是）... 我不想老是绕着我的肚脐眼转啊，一点也不刺激，“能不能绕着我的头转？” 儿子对它爸说。
 
+     父图层一听，好啊，你小子，有想法啊，“那行，绕着你的哪一点转都可以，不过，你必须还在我 给你的 position 位置转！你的 position 位置不能变！”
 
+     儿子想：那我只能挪挪我的 frame 咯，不然没法按照老子的要求转了。 于是，它把自己的 anchorPoint 点移到了 position 位置上，愉快地开始转了=。=
+     */
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
