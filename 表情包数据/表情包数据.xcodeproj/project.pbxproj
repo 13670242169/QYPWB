@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F4545C66C07F51D1F0AAB49 /* Pods______.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27445A841687D3DB1C8E825 /* Pods______.framework */; };
 		917D95721F9E1AFD00761AC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D95711F9E1AFD00761AC6 /* AppDelegate.swift */; };
 		917D95741F9E1AFD00761AC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D95731F9E1AFD00761AC6 /* ViewController.swift */; };
 		917D95771F9E1AFD00761AC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917D95751F9E1AFD00761AC6 /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		917D957C1F9E1AFD00761AC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917D957A1F9E1AFD00761AC6 /* LaunchScreen.storyboard */; };
 		917D95871F9E1AFD00761AC6 /* _____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D95861F9E1AFD00761AC6 /* _____Tests.swift */; };
 		917D95921F9E1AFD00761AC6 /* _____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D95911F9E1AFD00761AC6 /* _____UITests.swift */; };
+		917D95AD1F9E26F900761AC6 /* HMEmoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 917D95AC1F9E26F900761AC6 /* HMEmoticon.bundle */; };
+		917D95B31F9E28D600761AC6 /* YWEmonticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D95B21F9E28D500761AC6 /* YWEmonticonManager.swift */; };
+		917D95B61F9E28E300761AC6 /* YWEmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D95B41F9E28E200761AC6 /* YWEmoticonPackage.swift */; };
+		917D95B71F9E28E300761AC6 /* YWEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D95B51F9E28E200761AC6 /* YWEmoticon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1751074DBB975683C2043F4A /* Pods-表情包数据.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-表情包数据.release.xcconfig"; path = "Pods/Target Support Files/Pods-表情包数据/Pods-表情包数据.release.xcconfig"; sourceTree = "<group>"; };
 		917D956E1F9E1AFD00761AC6 /* 表情包数据.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "表情包数据.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		917D95711F9E1AFD00761AC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		917D95731F9E1AFD00761AC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		917D958D1F9E1AFD00761AC6 /* 表情包数据UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "表情包数据UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		917D95911F9E1AFD00761AC6 /* _____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_____UITests.swift"; sourceTree = "<group>"; };
 		917D95931F9E1AFD00761AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		917D95AC1F9E26F900761AC6 /* HMEmoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HMEmoticon.bundle; sourceTree = "<group>"; };
+		917D95B21F9E28D500761AC6 /* YWEmonticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWEmonticonManager.swift; sourceTree = "<group>"; };
+		917D95B41F9E28E200761AC6 /* YWEmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWEmoticonPackage.swift; sourceTree = "<group>"; };
+		917D95B51F9E28E200761AC6 /* YWEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWEmoticon.swift; sourceTree = "<group>"; };
+		A27445A841687D3DB1C8E825 /* Pods______.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods______.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B938A8C12A298A1BB4E9ED67 /* Pods-表情包数据.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-表情包数据.debug.xcconfig"; path = "Pods/Target Support Files/Pods-表情包数据/Pods-表情包数据.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F4545C66C07F51D1F0AAB49 /* Pods______.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EB79CFCF98CCB4EF621B0BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B938A8C12A298A1BB4E9ED67 /* Pods-表情包数据.debug.xcconfig */,
+				1751074DBB975683C2043F4A /* Pods-表情包数据.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		917D95651F9E1AFD00761AC6 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				917D95851F9E1AFD00761AC6 /* 表情包数据Tests */,
 				917D95901F9E1AFD00761AC6 /* 表情包数据UITests */,
 				917D956F1F9E1AFD00761AC6 /* Products */,
+				6EB79CFCF98CCB4EF621B0BB /* Pods */,
+				AFED08934D2BBC77EF279411 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +121,7 @@
 		917D95701F9E1AFD00761AC6 /* 表情包数据 */ = {
 			isa = PBXGroup;
 			children = (
+				917D959F1F9E1B3A00761AC6 /* Emoticon */,
 				917D95711F9E1AFD00761AC6 /* AppDelegate.swift */,
 				917D95731F9E1AFD00761AC6 /* ViewController.swift */,
 				917D95751F9E1AFD00761AC6 /* Main.storyboard */,
@@ -125,6 +150,33 @@
 			path = "表情包数据UITests";
 			sourceTree = "<group>";
 		};
+		917D959F1F9E1B3A00761AC6 /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				917D95B21F9E28D500761AC6 /* YWEmonticonManager.swift */,
+				917D95AC1F9E26F900761AC6 /* HMEmoticon.bundle */,
+				917D95A71F9E204800761AC6 /* model */,
+			);
+			path = Emoticon;
+			sourceTree = "<group>";
+		};
+		917D95A71F9E204800761AC6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				917D95B51F9E28E200761AC6 /* YWEmoticon.swift */,
+				917D95B41F9E28E200761AC6 /* YWEmoticonPackage.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AFED08934D2BBC77EF279411 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A27445A841687D3DB1C8E825 /* Pods______.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 917D95961F9E1AFD00761AC6 /* Build configuration list for PBXNativeTarget "表情包数据" */;
 			buildPhases = (
+				8BFC3082F1BBD5130D770220 /* [CP] Check Pods Manifest.lock */,
 				917D956A1F9E1AFD00761AC6 /* Sources */,
 				917D956B1F9E1AFD00761AC6 /* Frameworks */,
 				917D956C1F9E1AFD00761AC6 /* Resources */,
+				7DAAF392C2020BC26F76DB39 /* [CP] Embed Pods Frameworks */,
+				E23D6D9D71874A5C0A318A82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				917D95AD1F9E26F900761AC6 /* HMEmoticon.bundle in Resources */,
 				917D957C1F9E1AFD00761AC6 /* LaunchScreen.storyboard in Resources */,
 				917D95791F9E1AFD00761AC6 /* Assets.xcassets in Resources */,
 				917D95771F9E1AFD00761AC6 /* Main.storyboard in Resources */,
@@ -254,13 +310,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7DAAF392C2020BC26F76DB39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-表情包数据/Pods-表情包数据-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-表情包数据/Pods-表情包数据-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BFC3082F1BBD5130D770220 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-表情包数据-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E23D6D9D71874A5C0A318A82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-表情包数据/Pods-表情包数据-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		917D956A1F9E1AFD00761AC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				917D95B71F9E28E300761AC6 /* YWEmoticon.swift in Sources */,
+				917D95B61F9E28E300761AC6 /* YWEmoticonPackage.swift in Sources */,
 				917D95741F9E1AFD00761AC6 /* ViewController.swift in Sources */,
 				917D95721F9E1AFD00761AC6 /* AppDelegate.swift in Sources */,
+				917D95B31F9E28D600761AC6 /* YWEmonticonManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +537,7 @@
 		};
 		917D95971F9E1AFD00761AC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B938A8C12A298A1BB4E9ED67 /* Pods-表情包数据.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +552,7 @@
 		};
 		917D95981F9E1AFD00761AC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1751074DBB975683C2043F4A /* Pods-表情包数据.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
