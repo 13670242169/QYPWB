@@ -26,6 +26,11 @@
 		1857FE7C1FB42A8600065994 /* ViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857FE7B1FB42A8600065994 /* ViewController5.m */; };
 		1857FE7F1FB42DA300065994 /* ViewController6.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857FE7E1FB42DA300065994 /* ViewController6.m */; };
 		1857FE821FB42FC000065994 /* ViewController7.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857FE811FB42FC000065994 /* ViewController7.m */; };
+		1857FE851FB4324B00065994 /* ViewController8.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857FE841FB4324B00065994 /* ViewController8.m */; };
+		1857FE881FB4341400065994 /* ViewController9.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857FE871FB4341400065994 /* ViewController9.m */; };
+		1857FE8B1FB4349A00065994 /* ViewController10.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857FE8A1FB4349A00065994 /* ViewController10.m */; };
+		1857FE8E1FB437D500065994 /* ViewController11.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857FE8D1FB437D500065994 /* ViewController11.m */; };
+		1857FE911FB4397900065994 /* ViewController12.m in Sources */ = {isa = PBXBuildFile; fileRef = 1857FE901FB4397900065994 /* ViewController12.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +85,16 @@
 		1857FE7E1FB42DA300065994 /* ViewController6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController6.m; sourceTree = "<group>"; };
 		1857FE801FB42FC000065994 /* ViewController7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController7.h; sourceTree = "<group>"; };
 		1857FE811FB42FC000065994 /* ViewController7.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController7.m; sourceTree = "<group>"; };
+		1857FE831FB4324B00065994 /* ViewController8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController8.h; sourceTree = "<group>"; };
+		1857FE841FB4324B00065994 /* ViewController8.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController8.m; sourceTree = "<group>"; };
+		1857FE861FB4341400065994 /* ViewController9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController9.h; sourceTree = "<group>"; };
+		1857FE871FB4341400065994 /* ViewController9.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController9.m; sourceTree = "<group>"; };
+		1857FE891FB4349A00065994 /* ViewController10.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController10.h; sourceTree = "<group>"; };
+		1857FE8A1FB4349A00065994 /* ViewController10.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController10.m; sourceTree = "<group>"; };
+		1857FE8C1FB437D500065994 /* ViewController11.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController11.h; sourceTree = "<group>"; };
+		1857FE8D1FB437D500065994 /* ViewController11.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController11.m; sourceTree = "<group>"; };
+		1857FE8F1FB4397900065994 /* ViewController12.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController12.h; sourceTree = "<group>"; };
+		1857FE901FB4397900065994 /* ViewController12.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController12.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +167,16 @@
 				1857FE7E1FB42DA300065994 /* ViewController6.m */,
 				1857FE801FB42FC000065994 /* ViewController7.h */,
 				1857FE811FB42FC000065994 /* ViewController7.m */,
+				1857FE831FB4324B00065994 /* ViewController8.h */,
+				1857FE841FB4324B00065994 /* ViewController8.m */,
+				1857FE861FB4341400065994 /* ViewController9.h */,
+				1857FE871FB4341400065994 /* ViewController9.m */,
+				1857FE891FB4349A00065994 /* ViewController10.h */,
+				1857FE8A1FB4349A00065994 /* ViewController10.m */,
+				1857FE8C1FB437D500065994 /* ViewController11.h */,
+				1857FE8D1FB437D500065994 /* ViewController11.m */,
+				1857FE8F1FB4397900065994 /* ViewController12.h */,
+				1857FE901FB4397900065994 /* ViewController12.m */,
 				1857FE351FB3EE9700065994 /* Main.storyboard */,
 				1857FE381FB3EE9700065994 /* Assets.xcassets */,
 				1857FE3A1FB3EE9700065994 /* LaunchScreen.storyboard */,
@@ -317,12 +342,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1857FE7C1FB42A8600065994 /* ViewController5.m in Sources */,
+				1857FE851FB4324B00065994 /* ViewController8.m in Sources */,
 				1857FE641FB3F44F00065994 /* ViewController1.m in Sources */,
 				1857FE821FB42FC000065994 /* ViewController7.m in Sources */,
 				1857FE7F1FB42DA300065994 /* ViewController6.m in Sources */,
+				1857FE8B1FB4349A00065994 /* ViewController10.m in Sources */,
+				1857FE8E1FB437D500065994 /* ViewController11.m in Sources */,
 				1857FE341FB3EE9700065994 /* ViewController.m in Sources */,
 				1857FE731FB40D8A00065994 /* ViewController3.m in Sources */,
 				1857FE6B1FB40CC700065994 /* ViewController2.m in Sources */,
+				1857FE911FB4397900065994 /* ViewController12.m in Sources */,
+				1857FE881FB4341400065994 /* ViewController9.m in Sources */,
 				1857FE3F1FB3EE9700065994 /* main.m in Sources */,
 				1857FE781FB40FD300065994 /* ViewController4.m in Sources */,
 				1857FE311FB3EE9700065994 /* AppDelegate.m in Sources */,
