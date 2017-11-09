@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController3">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="1273"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9TZ-DK-9xC">
+                    <rect key="frame" x="0.0" y="0.0" width="444" height="1273"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <mutableString key="text">3. GCD的使用步骤
+
+GCD的使用步骤其实很简单，只有两步。
+
+创建一个队列（串行队列或并行队列）
+将任务添加到队列中，然后系统就会根据任务类型执行任务（同步执行或异步执行）
+下边来看看队列的创建方法和任务的创建方法。
+
+1. 队列的创建方法
+
+可以使用dispatch_queue_create来创建对象，需要传入两个参数，第一个参数表示队列的唯一标识符，用于DEBUG，可为空；第二个参数用来识别是串行队列还是并行队列。DISPATCH_QUEUE_SERIAL表示串行队列，DISPATCH_QUEUE_CONCURRENT表示并行队列。
+
+/ 串行队列的创建方法
+dispatch_queue_t queue= dispatch_queue_create("test.queue", DISPATCH_QUEUE_SERIAL);
+// 并行队列的创建方法
+dispatch_queue_t queue= dispatch_queue_create("test.queue", DISPATCH_QUEUE_CONCURRENT);
+
+对于并行队列，还可以使用dispatch_get_global_queue来创建全局并行队列。GCD默认提供了全局的并行队列，需要传入两个参数。第一个参数表示队列优先级，一般用DISPATCH_QUEUE_PRIORITY_DEFAULT。第二个参数暂时没用，用0即可。
+
+2. 任务的创建方法
+// 同步执行任务创建方法
+dispatch_sync(queue, ^{
+    NSLog(@"%@",[NSThread currentThread]);    // 这里放任务代码
+});
+// 异步执行任务创建方法
+dispatch_async(queue, ^{
+    NSLog(@"%@",[NSThread currentThread]);    // 这里放任务代码
+});
+
+虽然使用GCD只需两步，但是既然我们有两种队列，两种任务执行方式，那么我们就有了四种不同的组合方式。这四种不同的组合方式是
+
+并行队列 + 同步执行
+并行队列 + 异步执行
+串行队列 + 同步执行
+串行队列 + 异步执行
+
+实际上，我们还有一种特殊队列是主队列，那样就有六种不同的组合方式了。
+
+主队列 + 同步执行
+主队列 + 异步执行
+
+那么这几种不同组合方式各有什么区别呢，这里为了方便，先上结果，再来讲解。为图省事，直接查看表格结果，然后可以跳过** 4. GCD的基本使用** 了。
+
+	</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2410FA37-E77D-4740-AE3F-B9673777F36D" translatesAutoresizingMaskIntoConstraints="NO" id="AlY-mj-cRT">
+                    <rect key="frame" x="0.0" y="1073" width="444" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Kcj-gT-R2g"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="9TZ-DK-9xC" secondAttribute="trailing" id="A6E-XR-n1c"/>
+                <constraint firstItem="9TZ-DK-9xC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ExV-p6-gMz"/>
+                <constraint firstItem="9TZ-DK-9xC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PTG-2I-9sy"/>
+                <constraint firstItem="AlY-mj-cRT" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="ZQ2-4d-kkh"/>
+                <constraint firstItem="AlY-mj-cRT" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Zpm-57-PHt"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="AlY-mj-cRT" secondAttribute="bottom" id="hCT-lm-dQB"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="9TZ-DK-9xC" secondAttribute="bottom" id="u8A-y3-fGV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="68" y="357.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="2410FA37-E77D-4740-AE3F-B9673777F36D" width="672" height="187"/>
+    </resources>
+</document>

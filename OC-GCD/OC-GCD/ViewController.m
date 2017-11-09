@@ -32,14 +32,21 @@
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSMutableArray *dataSource;
+@property(nonatomic,strong)NSMutableArray *cls;
 @end
 
 @implementation ViewController
 -(NSMutableArray *)dataSource{
     if (_dataSource == nil) {
-        _dataSource = [NSMutableArray arrayWithObjects:@"GCD简介",@"任务和队列",@"GCD的使用步骤",@"队列的创建方法",@"任务的创建方法",@"GCD的基本使用",@"并行队列 + 同步执行",@"并行队列 + 异步执行",@"串行队列 + 同步执行",@"主队列 + 同步执行",@"主队列 + 异步执行",@"GCD线程之间的通讯",@"GCD的其他方法",@"GCD的栅栏方法dispatch_barrier_async",@"GCD的延时执行方法dispatch_after",@"GCD的一次性代码(只执行一次)dispatch_once",@"GCD的快速迭代方法dispatch_apply",@"GCD的队列组dispatch_group", nil];
+        _dataSource = [NSMutableArray arrayWithObjects:@"GCD简介",@"任务和队列",@"GCD的使用步骤",@"并行队列 + 同步执行",@"并行队列 + 异步执行",@"串行队列 + 同步执行",@"串行队列 + 异步执行",@"主队列 + 同步执行",@"主队列 + 异步执行",@"GCD线程之间的通讯",@"GCD的其他方法",@"GCD的栅栏方法dispatch_barrier_async",@"GCD的延时执行方法dispatch_after",@"GCD的一次性代码(只执行一次)dispatch_once",@"GCD的快速迭代方法dispatch_apply",@"GCD的队列组dispatch_group", nil];
     }
     return _dataSource;
+}
+-(NSMutableArray *)cls{
+    if (_cls == nil) {
+        _cls = [NSMutableArray arrayWithObjects:@"ViewController1",@"ViewController2",@"ViewController3",@"ViewController4",@"ViewController5",@"ViewController6",@"ViewController7",@"ViewController1",@"ViewController1",@"ViewController1",@"ViewController1",@"ViewController1",@"ViewController1",@"ViewController1",@"ViewController1",@"ViewController1",@"ViewController1",@"ViewController1", nil];
+    }
+    return  _cls;
 }
 -(UITableView *)tableView{
     if (_tableView == nil) {
@@ -63,6 +70,12 @@
     }
     cell.textLabel.text = self.dataSource[indexPath.row];
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIViewController *mycv = [[NSClassFromString(self.cls[indexPath.row]) alloc] init];
+  
+    [self.navigationController pushViewController:mycv animated:YES];
+
 }
 
 
